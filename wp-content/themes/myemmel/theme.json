@@ -1,0 +1,242 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1080px",
+      "wideSize": "1080px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "defaultDuotone": false,
+      "palette": [
+        {
+          "slug": "bg",
+          "name": "Background",
+          "color": "#F7F8F6"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "ink",
+          "name": "Ink",
+          "color": "#101D32"
+        },
+        {
+          "slug": "text",
+          "name": "Text",
+          "color": "#2B3749"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#667B91"
+        },
+        {
+          "slug": "rule",
+          "name": "Rule",
+          "color": "#DFE4E8"
+        },
+        {
+          "slug": "lime",
+          "name": "Lime",
+          "color": "#D6F342"
+        },
+        {
+          "slug": "photo",
+          "name": "Photo",
+          "color": "#E9EDF0"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "slug": "head",
+          "name": "Montserrat",
+          "fontFamily": "Montserrat, \"Helvetica Neue\", Arial, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/montserrat-latin-500-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/montserrat-latin-600-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/montserrat-latin-700-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/montserrat-latin-800-normal.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "body",
+          "name": "Manrope",
+          "fontFamily": "Manrope, \"Helvetica Neue\", Arial, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Manrope",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope-latin-400-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Manrope",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope-latin-500-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Manrope",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope-latin-600-normal.woff2"
+              ]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "xs",
+          "name": "XS",
+          "size": "12px"
+        },
+        {
+          "slug": "sm",
+          "name": "S",
+          "size": "14px"
+        },
+        {
+          "slug": "base",
+          "name": "Base",
+          "size": "18px"
+        },
+        {
+          "slug": "md",
+          "name": "M",
+          "size": "16.5px"
+        },
+        {
+          "slug": "lg",
+          "name": "L",
+          "size": "21px"
+        },
+        {
+          "slug": "h2",
+          "name": "H2",
+          "size": "clamp(28px, 3.2vw, 38px)"
+        },
+        {
+          "slug": "h1",
+          "name": "H1",
+          "size": "clamp(42px, 5.8vw, 74px)"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "%",
+        "vw"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "20",
+          "name": "S",
+          "size": "16px"
+        },
+        {
+          "slug": "30",
+          "name": "M",
+          "size": "clamp(24px, 5vw, 48px)"
+        },
+        {
+          "slug": "40",
+          "name": "L",
+          "size": "clamp(32px, 6vw, 72px)"
+        },
+        {
+          "slug": "50",
+          "name": "XL",
+          "size": "clamp(64px, 9vw, 112px)"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--bg)",
+      "text": "var(--wp--preset--color--text)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--ink)"
+        },
+        "typography": {
+          "textDecoration": "underline"
+        },
+        ":hover": {
+          "typography": {
+            "textDecoration": "underline"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "text": "var(--wp--preset--color--ink)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--head)"
+        }
+      }
+    }
+  }
+}
