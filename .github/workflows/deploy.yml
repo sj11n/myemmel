@@ -1,0 +1,27 @@
+name: Deploy theme
+on:
+  push:
+    branches: [main]
+    paths: ['wp-content/themes/myemmel/**', '.github/workflows/deploy.yml']
+  workflow_dispatch:
+concurrency: deploy
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lftp
+        run: sudo apt-get install -y -qq lftp >/dev/null
+      - name: Upload theme via SFTP (theme folder only)
+        env:
+          HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          USER_: ${{ secrets.STRATO_SFTP_USER }}
+          PASS: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          TPATH: ${{ secrets.STRATO_THEME_PATH }}
+        run: |
+          lftp -u "$USER_","$PASS" "sftp://$HOST" <<LFTP
+          set sftp:auto-confirm yes
+          set net:max-retries 3
+          mirror -R --delete --verbose --exclude '.gitkeep' wp-content/themes/myemmel "$TPATH"
+          bye
+          LFTP
