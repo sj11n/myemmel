@@ -13,7 +13,7 @@ Deutschland
 ## Kontakt
 
 E-Mail: bjoern@myemmel.com
-Telefon: TODO – Telefonnummer oder ein zweiter direkter Kontaktweg (siehe Hinweis unten)
+Telefon: +49 6181 6181649
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 

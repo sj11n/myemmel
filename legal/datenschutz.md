@@ -29,7 +29,7 @@ Beim Aufruf der Website erfasst der Server automatisch Informationen, die Ihr Br
 - Referrer-URL (die zuvor besuchte Seite)
 - verwendeter Browser und Betriebssystem
 
-Diese Daten sind technisch erforderlich, um die Website auszuliefern und die Sicherheit des Betriebs zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden vom Hoster nach TODO: Speicherdauer bei STRATO prüfen (üblich: 7 Tage) gelöscht bzw. anonymisiert.
+Diese Daten sind technisch erforderlich, um die Website auszuliefern und die Sicherheit des Betriebs zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden vom Hoster nach 7 Tagen gelöscht bzw. anonymisiert.
 
 ## 5. Reichweitenmessung (Koko Analytics)
 
@@ -66,7 +66,7 @@ Der Hessische Beauftragte für Datenschutz und Informationsfreiheit, Gustav-Stre
 
 ## 11. Aktualität
 
-Stand dieser Datenschutzerklärung: TODO Datum des Livegangs.
+Stand dieser Datenschutzerklärung: 10.10.2026.
 
 ---
 
