@@ -66,7 +66,7 @@ Der Hessische Beauftragte für Datenschutz und Informationsfreiheit, Gustav-Stre
 
 ## 11. Aktualität
 
-Stand dieser Datenschutzerklärung: TODO Datum des Livegangs.
+Stand dieser Datenschutzerklärung: 10.10.2026.
 
 ---
 

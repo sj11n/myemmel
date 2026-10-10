@@ -121,3 +121,10 @@ footer.wp-block-template-part nav a { font-family: var(--body); font-weight: 400
 .page .wp-block-post-title { font-size: clamp(32px, 4vw, 46px); margin-bottom: 24px; }
 .page .wp-block-post-content p { max-width: 36em; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Legal pages (German text, plain reading layout) */
+.legal { padding-block: clamp(32px, 6vw, 72px); }
+.legal h1 { font-size: clamp(32px, 4vw, 46px); font-weight: 800; letter-spacing: -.015em; line-height: 1.1; margin-bottom: 32px; }
+.legal h2 { font-size: 22px; font-weight: 700; margin: 36px 0 12px; }
+.legal p, .legal ul { max-width: 40em; margin: 0 0 1em; }
+.legal ul { padding-left: 1.2em; }
