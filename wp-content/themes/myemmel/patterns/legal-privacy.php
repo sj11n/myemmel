@@ -64,7 +64,7 @@ $mail = antispambot( 'bjoern@myemmel.com' );
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Diese Daten sind technisch erforderlich, um die Website auszuliefern und die Sicherheit des Betriebs zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden vom Hoster nach TODO: Speicherdauer bei STRATO prüfen (üblich: 7 Tage) gelöscht bzw. anonymisiert.</p>
+<p>Diese Daten sind technisch erforderlich, um die Website auszuliefern und die Sicherheit des Betriebs zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Die Logfiles werden vom Hoster nach 7 Tagen gelöscht bzw. anonymisiert.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
