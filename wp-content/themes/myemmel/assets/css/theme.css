@@ -1,0 +1,123 @@
+/* MYEMMEL theme styles. Ported from the approved design (design/index.html); only what theme.json cannot express. */
+/* Layout: light page, one wide column with a two-column hero. The two strokes of the 11 are the only mark; lime is used for underlines and the contact button only. */
+:root {
+  --bg: #F7F8F6;
+  --surface: #FFFFFF;
+  --ink: #101D32;
+  --text: #2B3749;
+  --muted: #667B91;
+  --rule: #DFE4E8;
+  --lime: #D6F342;
+  --photo: #E9EDF0;
+  --head: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --body: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1080px; margin-inline: auto; padding-inline: clamp(16px, 5vw, 48px); }
+a { color: var(--ink); text-underline-offset: 4px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+h1, h2, h3 { margin-block: 0; font-family: var(--head); color: var(--ink); margin: 0; text-wrap: balance; }
+.label { font-family: var(--head); font-weight: 600; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+.label::before { content: ""; flex: none; width: 7px; height: 12px; background: linear-gradient(to right, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 7px); }
+.foot-mark { display: inline-flex; gap: 3px; height: 14px; margin-right: 10px; vertical-align: -2px; }
+.foot-mark i { display: block; width: 2px; height: 100%; background: var(--lime); }
+.mark { background: linear-gradient(transparent 62%, var(--lime) 62%, var(--lime) 94%, transparent 94%); padding-inline: 2px; }
+
+/* Header */
+header.wp-block-template-part { padding-block: 26px; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 12px; font-family: var(--head); font-weight: 800; font-size: 15px; letter-spacing: .08em; color: var(--ink); text-decoration: none; }
+.logo .sep { color: var(--muted); font-weight: 600; margin-inline: -2px; }
+.logo .who { font-weight: 600; letter-spacing: .02em; }
+.eleven { display: inline-flex; gap: 4px; height: 20px; }
+.eleven i { display: block; width: 3px; height: 100%; background: var(--ink); }
+nav { display: flex; gap: 26px; }
+nav a { font-family: var(--head); font-weight: 600; font-size: 13px; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--ink); }
+@media (max-width: 640px) { nav { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(32px, 6vw, 72px) clamp(48px, 7vw, 88px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+@media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; } }
+.hero h1 .line { display: block; white-space: nowrap; }
+.hero h1 { font-size: clamp(42px, 5.8vw, 74px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; margin: 14px 0 22px; }
+.hero .role { font-family: var(--head); font-weight: 700; font-size: clamp(14px, 1.3vw, 16px); letter-spacing: .16em; text-transform: uppercase; color: var(--ink); margin: 0 0 28px; }
+.hero p.intro { margin: 0 0 1em; max-width: 34em; }
+.portrait { position: relative; margin: 14px 0 0; justify-self: end; width: 100%; max-width: 380px; padding-left: 26px; }
+.portrait::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 10px; background: linear-gradient(to right, var(--ink) 0 3px, transparent 3px 7px, var(--ink) 7px 10px); }
+.photo { aspect-ratio: 4 / 5; width: 100%; height: auto; object-fit: cover; object-position: center top; background: var(--photo); display: block; }
+@media (max-width: 820px) { .portrait { justify-self: start; max-width: 320px; margin-top: 0; } }
+.photo span { font-size: 14px; color: var(--muted); padding: 14px 16px; }
+
+/* KPIs */
+.kpis { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+@media (max-width: 820px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; } }
+.kpis li { min-width: 0; border-top: 2px solid var(--ink); padding-top: 16px; }
+.kpis .num { display: block; font-family: var(--head); font-weight: 700; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.05; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.kpis .txt { display: block; margin-top: 8px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+
+/* Sections */
+.block { padding-block: clamp(64px, 9vw, 112px); }
+.block { border-top: 1px solid var(--rule); }
+.kpi-band { padding-bottom: clamp(56px, 8vw, 96px); }
+.two .prose { padding-top: 30px; }
+@media (max-width: 820px) { .two .prose { padding-top: 0; } }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(24px, 5vw, 72px); align-items: start; }
+@media (max-width: 820px) { .two { grid-template-columns: 1fr; } }
+.two h2 { font-size: clamp(28px, 3.2vw, 38px); font-weight: 700; line-height: 1.15; letter-spacing: -.01em; margin-top: 10px; }
+.prose p { margin: 0 0 1.05em; max-width: 36em; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: var(--ink); font-weight: 700; }
+.quote { margin-top: 30px; padding-left: 20px; border-left: 3px solid var(--lime); font-family: var(--head); font-weight: 600; font-size: 21px; line-height: 1.45; color: var(--ink); max-width: 28em; }
+
+/* Principles */
+.prose .lead-in { margin: 32px 0 0; font-family: var(--head); font-weight: 700; font-size: 16px; color: var(--ink); }
+.principles { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.principles li { display: grid; grid-template-columns: minmax(0, 13em) minmax(0, 1fr); gap: 8px 32px; padding-block: 20px; border-bottom: 1px solid var(--rule); }
+@media (max-width: 640px) { .principles li { grid-template-columns: 1fr; } }
+.principles h3 { font-size: 17px; font-weight: 700; line-height: 1.4; }
+.principles p { margin: 0; font-size: 16.5px; }
+
+/* Path */
+.path { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.path li { display: grid; grid-template-columns: minmax(0, 15em) minmax(0, 1fr); gap: 4px 32px; padding-block: 16px; border-bottom: 1px solid var(--rule); }
+@media (max-width: 640px) { .path li { grid-template-columns: 1fr; } }
+.path .org { font-family: var(--head); font-weight: 700; font-size: 16px; color: var(--ink); }
+.path .role { display: block; font-size: 14px; color: var(--muted); }
+.path .years { display: block; font-family: var(--body); font-weight: 600; font-size: 12px; letter-spacing: .08em; color: var(--muted); margin-top: 2px; font-variant-numeric: tabular-nums; }
+.path .what { font-size: 16px; }
+.also { margin-top: 28px; font-size: 16px; color: var(--muted); }
+.also b { color: var(--text); font-weight: 600; }
+
+/* Contact */
+.contact { background: var(--ink); color: #DCE3E9; padding-block: clamp(56px, 8vw, 96px); }
+.contact h2 { color: #F5F7F4; font-size: clamp(30px, 4vw, 46px); font-weight: 800; letter-spacing: -.015em; line-height: 1.1; }
+.contact p { max-width: 32em; margin: 18px 0 30px; }
+.btns { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.btn { display: inline-block; font-family: var(--head); font-weight: 700; font-size: 14px; letter-spacing: .04em; text-decoration: none; padding: 14px 22px; background: var(--lime); color: var(--ink); }
+.btn:hover { background: #F5F7F4; }
+.mail { color: #F5F7F4; font-size: 16px; text-decoration: underline; text-underline-offset: 4px; }
+footer.wp-block-template-part { background: var(--ink); color: #93A4B6; border-top: 1px solid #22344F; padding-block: 22px 28px; font-size: 14px; }
+footer.wp-block-template-part .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+footer.wp-block-template-part a { color: #93A4B6; }
+footer.wp-block-template-part nav { display: flex; gap: 18px; }
+footer.wp-block-template-part nav a { font-family: var(--body); font-weight: 400; font-size: 14px; }
+
+/* WordPress glue: the editor wraps blocks in extra elements; neutralise default spacing and links styled by theme.json. */
+.wp-site-blocks > * { margin-block: 0; }
+.logo, nav a, .btn { text-decoration: none; }
+.label { margin: 0; }
+.hero p { margin-block-start: 0; }
+.hero .role { margin: 0 0 28px; }
+.two .prose p.quote, .prose p.lead-in { margin-block-end: 0; }
+.prose p.quote { margin-top: 30px; }
+.contact p { margin: 18px 0 30px; color: #DCE3E9; }
+.page { padding-block: clamp(32px, 6vw, 72px); }
+.page .wp-block-post-title { font-size: clamp(32px, 4vw, 46px); margin-bottom: 24px; }
+.page .wp-block-post-content p { max-width: 36em; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

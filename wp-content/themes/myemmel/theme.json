@@ -237,6 +237,9 @@
           "fontFamily": "var(--wp--preset--font-family--head)"
         }
       }
+    },
+    "spacing": {
+      "blockGap": "0"
     }
   }
 }
