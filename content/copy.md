@@ -39,7 +39,7 @@ Label: How I work
 
 What they lack is focus. They start too many things and finish too few: a transformation programme, a performance programme, a cost initiative. Each makes sense on its own. Together they are never one system.
 
-So I build the system first: one goal, clear priorities, simple standards for how the work gets done, and a steady rhythm of review. That's what makes change last. Only then can you see what really moves results, and what can go. That's why I start with the same three questions. What are we trying to achieve? What has to happen to get there? **And what can we stop doing?**
+So I build the system first: one goal, clear priorities, simple standards for how the work gets done, and a steady rhythm of review. That's what makes change last. It also shows you what really moves results, and what can go. I start with the same three questions every time. What are we trying to achieve? What has to happen to get there? **And what can we stop doing?**
 
 Four parts make it work:
 
