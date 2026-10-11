@@ -35,7 +35,7 @@
 <ul class="principles">
   <li><h3>Direction &amp; value</h3><p>One clear goal, broken down so every team knows what it contributes. Then sort the work by value: what creates it gets our energy, what only supports it gets leaner, and what does neither stops.</p></li>
   <li><h3>Execution &amp; learning</h3><p>Write the assumption down. Decide when you're 70 percent sure. Act, measure, adjust, and learn from what happened. Then do it again. That's continuous improvement, the Lean way I was trained in, run at the speed of a start-up.</p></li>
-  <li><h3>Data &amp; AI</h3><p>Measure what matters, and use data to take opinion out of decisions. Use AI to take routine work off people's desks, so their time goes where judgement matters. I build my own agents and automations, so I know what works and what doesn't.</p></li>
+  <li><h3>Data &amp; AI</h3><p>Measure what matters, and use data to take opinion out of decisions. Use AI to analyse that data faster and better. Use it to take routine work off people's desks, so their time goes where judgement matters. I build my own agents and automations, so I know what works and what doesn't.</p></li>
   <li><h3>Leadership &amp; people</h3><p>The hard part hasn't changed. People still have to want to get better, and leaders have to make that possible, starting with themselves. Every day is day one.</p></li>
 </ul>
 <!-- /wp:html --></div>
