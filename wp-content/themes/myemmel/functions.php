@@ -41,3 +41,20 @@ add_filter( 'xmlrpc_enabled', '__return_false' );
 add_action( 'init', function () {
 	register_block_pattern_category( 'myemmel', array( 'label' => 'MYEMMEL' ) );
 } );
+
+// Favicon: two-bar "11" mark. Also answers direct /favicon.ico requests.
+add_action( 'wp_head', function () {
+	$u = static fn( $f ) => esc_url( get_theme_file_uri( 'assets/images/' . $f ) );
+	echo '<link rel="icon" href="' . $u( 'favicon.svg' ) . '" type="image/svg+xml">' . "\n";
+	echo '<link rel="icon" href="' . $u( 'favicon.ico' ) . '" sizes="32x32">' . "\n";
+	echo '<link rel="apple-touch-icon" href="' . $u( 'apple-touch-icon.png' ) . '">' . "\n";
+}, 2 );
+add_filter( 'site_icon_meta_tags', '__return_empty_array' );
+add_action( 'init', function () {
+	remove_action( 'do_faviconico', 'do_favicon' );
+}, 20 );
+add_action( 'do_faviconico', function () {
+	header( 'Content-Type: image/vnd.microsoft.icon' );
+	readfile( get_theme_file_path( 'assets/images/favicon.ico' ) );
+	exit;
+} );
